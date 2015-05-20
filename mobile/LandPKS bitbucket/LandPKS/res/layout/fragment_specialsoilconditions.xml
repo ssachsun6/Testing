@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".45"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+
+	        <RadioGroup
+	            android:id="@+id/soilCrackedRadioGroup"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	
+	              <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/soilCrackedRadioButton"
+	                android:tag="@string/special_soil_conditions_fragment_surface_cracked"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_specialsoil_cracks"
+	                android:button="@null"/>
+	              	<!-- 
+	   			    <TextView
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:text="Surface cracked"
+				    />
+				    -->
+	              	              	                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/soilNotCrackedRadioButton"
+	                android:tag="@string/special_soil_conditions_fragment_surface_not_cracked"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_specialsoil_nocracks"
+	                android:button="@null"/>
+	              	<!-- 
+	            	<TextView
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:text="Surface not cracked"
+				    />
+				    -->
+	            	            	              
+	        </RadioGroup>
+		</LinearLayout>
+				    	        	        
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".10"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:orientation="horizontal" >
+	        
+		    <View 
+	        	android:layout_centerHorizontal="true"
+		    	android:layout_width="3dp"
+		    	android:layout_height="match_parent"
+		    	android:background="#ff999999" />
+		    
+	    </LinearLayout>
+	        	        
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".45"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+	    
+	        <RadioGroup
+	            android:id="@+id/saltRadioGroup"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	
+	              <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/saltRadioButton"
+	                android:tag="@string/special_soil_conditions_fragment_surface_salt"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_specialsoil_salt"
+	                android:button="@null"/>
+	              	<!--
+				    <TextView
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:text="Surface salt"
+				    />
+				    -->
+	              	                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/noSaltRadioButton"
+	                android:tag="@string/special_soil_conditions_fragment_no_surface_salt"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_specialsoil_nosalt"
+	                android:button="@null"/>
+				    <!--
+				    <TextView
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:text="No surface salt"
+				    />
+				    -->
+	            	              
+	        </RadioGroup>
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

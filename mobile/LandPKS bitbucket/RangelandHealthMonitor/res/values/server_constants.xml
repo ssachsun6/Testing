@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string name="server_resource_height_01">&lt;10cm</string>
+   	<string name="server_resource_height_02">10-50cm</string>
+   	<string name="server_resource_height_03">50cm-1m</string>
+   	<string name="server_resource_height_04">1-2m</string>
+   	<string name="server_resource_height_05">2-3m</string>
+   	<string name="server_resource_height_06">&gt;3m</string>
+    
+   	<!--
+   	<string name="server_resource_segment_range_1">0-5m</string>
+	<string name="server_resource_segment_range_2">5-10m</string>
+	<string name="server_resource_segment_range_3">10-15m</string>
+	<string name="server_resource_segment_range_4">15-20m</string>
+	<string name="server_resource_segment_range_5">20-25m</string>
+	-->
+	<string name="server_resource_segment_range_1">5m</string>
+	<string name="server_resource_segment_range_2">10m</string>
+	<string name="server_resource_segment_range_3">15m</string>
+	<string name="server_resource_segment_range_4">20m</string>
+	<string name="server_resource_segment_range_5">25m</string>
+			
+</resources>

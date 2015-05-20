@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/rock_fragment_volume_image_view"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentLeft="true"
+    	android:paddingTop="5dp"
+    	android:paddingBottom="5dp"
+    	android:visibility="gone"
+    />
+
+    <TextView
+        android:id="@+id/rock_fragment_volume_text_view"
+        style="?android:attr/spinnerDropDownItemStyle"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentLeft="true"
+    	android:paddingTop="20dp"
+    	android:paddingBottom="20dp"
+    	android:visibility="gone"
+    />
+        
+</RelativeLayout>

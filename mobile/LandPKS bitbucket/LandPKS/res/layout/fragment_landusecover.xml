@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight=".60"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".50"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal" >
+	        <RadioGroup
+	            android:id="@+id/landCoverRadioGroup1"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/TreeRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_1"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_tree"
+	                android:button="@null"/>
+	            	                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/HerbaceousRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_3"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_herbaceous"
+	                android:button="@null"/>
+	            	              
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/MosiacRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_5"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_mosiac"
+	                android:button="@null"/>
+	            	            
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/UrbanRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_7"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_urban"
+	                android:button="@null"/>
+	            	            
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/FloodedRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_9"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_water"
+	                android:button="@null"/>
+
+	        </RadioGroup>
+        </LinearLayout>
+        
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".50"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal" >
+	        <RadioGroup
+	            android:id="@+id/landCoverRadioGroup2"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	        
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/ShrubRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_2"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_shrub"
+	                android:button="@null"/>
+            	            
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/SavannaRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_4"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_savanna"
+	                android:button="@null"/>
+
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/CultivatedRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_6"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_cultivated"
+	                android:button="@null"/>
+					            	            	            	            
+	             <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/BarrenRadioButton"
+	                android:tag="@string/land_use_cover_fragment_land_cover_8"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_landuse_barren"
+	                android:button="@null"/>
+	             	             
+	        </RadioGroup>  
+        </LinearLayout>
+	     
+    </LinearLayout>
+
+    <!-- 
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight=".10"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+        
+	     <View 
+        	android:layout_centerHorizontal="true"
+	    	android:layout_width="3dp"
+	    	android:layout_height="250dp"
+	    	android:layout_marginTop="20dp"
+	    	android:background="#ff000000" />
+	     
+    </LinearLayout>
+    -->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight=".10"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal" >
+        
+	     <View 
+        	android:layout_centerHorizontal="true"
+	    	android:layout_width="3dp"
+	    	android:layout_height="match_parent"
+	    	android:background="#ff999999" />
+	     
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".30"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/floodingRadioGroup"
+	            android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+	            android:gravity="center_horizontal"
+            >
+
+                <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+                    android:id="@+id/NotFloodingRadioButton"
+                	android:tag="@string/land_use_cover_fragment_not_flooded"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                 	android:background="@drawable/radio_landuse_not_flooded"
+                	android:button="@null"/>
+                
+                <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+                    android:id="@+id/FloodingRadioButton"
+                	android:tag="@string/land_use_cover_fragment_flooded"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:background="@drawable/radio_landuse_flooded"
+                	android:button="@null"/>
+            </RadioGroup>
+            
+            <!--  
+          	<View 
+		    	android:layout_width="80dp"
+		    	android:layout_height="3dp"
+		    	android:layout_marginTop="5dp"
+		    	android:background="#ff000000" />
+		    	-->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp" >
+          	<View 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="3dp"
+		    	android:layout_marginTop="10dp"
+		    	android:background="#ff999999" />
+          	</LinearLayout>
+          	
+            <RadioGroup
+                android:id="@+id/grazedRadioGroup"
+                android:paddingTop="5dp"
+	            android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+	            android:gravity="center_horizontal"
+	        >
+
+                <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+                    android:id="@+id/NotGrazedRadioButton"
+                	android:tag="@string/land_use_cover_fragment_not_grazed"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:background="@drawable/radio_landuse_notgrazed"
+                	android:button="@null"/>
+                
+                <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+                    android:id="@+id/GrazedRadioButton"
+                	android:tag="@string/land_use_cover_fragment_grazed"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+                	android:layout_marginTop="5dp"
+                	android:background="@drawable/radio_landuse_grazed"
+                	android:button="@null"/>
+            </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

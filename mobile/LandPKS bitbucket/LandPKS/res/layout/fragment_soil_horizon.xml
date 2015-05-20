@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/horizonNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/soilFragmentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:paddingTop="20dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/soil_horizon_fragment_rock_fragment_label" />
+    
+    <Spinner
+	    android:id="@+id/fragment_soil_horizon_rockfragment_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	/>
+    
+    <TextView
+        android:id="@+id/soilTextureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:paddingTop="40dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/soil_horizon_fragment_texture_label" />
+
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:orientation="horizontal"
+        >
+		    <Spinner
+			    android:id="@+id/fragment_soil_horizon_texture_spinner"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			/>
+		    <TextView
+		    	android:layout_width="wrap_content"
+		        android:layout_marginLeft="10dp"
+		    	android:layout_height="wrap_content" 
+		    	android:text="@string/or"
+		    />
+		    <Button
+		        android:id="@+id/textureButton"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:text="@string/soil_horizon_fragment_texture_button" />
+		    		    	        
+	    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+	    android:visibility="gone"
+	>
+    <TextView
+        android:id="@+id/soilColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:paddingTop="40dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/soil_horizon_fragment_color_label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/redLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+            android:text="@string/soil_horizon_fragment_red" />
+
+        <TextView
+            android:id="@+id/redValue"
+            android:layout_width="40dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/greenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingLeft="10dp"
+            android:text="@string/soil_horizon_fragment_green" />
+
+        <TextView
+            android:id="@+id/greenValue"
+            android:layout_width="40dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/blueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/soil_horizon_fragment_blue" />
+
+        <TextView
+            android:id="@+id/blueValue"
+            android:layout_width="40dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content" />
+        
+	</LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"
+     >
+        
+	    <TextView
+	        android:id="@+id/munsellLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/soil_horizon_fragment_munsell" />
+	
+	    <TextView
+	        android:id="@+id/munsellValue"
+	        android:layout_width="100dp"
+	        android:paddingLeft="10dp"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+    
+    <Button
+        android:id="@+id/colorButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:paddingTop="5dp"
+        android:text="@string/soil_horizon_fragment_color_button" />
+	</LinearLayout>
+	
+</LinearLayout>
+</ScrollView>

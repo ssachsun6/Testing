@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>   
+<fragment
+    android:id="@+id/plot_list"
+    android:name="com.noisyflowers.landpks.android.fragments.PlotListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".PlotListActivity"
+    tools:layout="@android:layout/list_content" 
+/>
+<!--
+<fragment 
+    android:id="@+id/plot_map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlotListActivity"
+/>
+-->
+<fragment 
+    android:id="@+id/plot_map"
+    android:name="com.noisyflowers.landpks.android.fragments.PlotMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlotListActivity"
+    map:mapType="hybrid"
+/>
+
+</LinearLayout>

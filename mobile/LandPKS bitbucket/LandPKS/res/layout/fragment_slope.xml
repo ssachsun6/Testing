@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    -->
+		    		    		
+
+    
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="vertical" >
+    <Button
+        android:id="@+id/fragment_slope_clinometerButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/fragment_slope_clinometer_button" />
+     <EditText
+        android:id="@+id/fragment_slope_clinometerResult"
+    	android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+    	android:layout_height="wrap_content" 
+    	android:editable="false"
+    	android:visibility="gone"
+    />
+	    
+    <TextView
+    	android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+    	android:layout_height="wrap_content" 
+    	android:text="@string/or"
+    />
+	    
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+	    
+   	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".50"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="horizontal" >
+	        
+	        <RadioGroup
+	            android:id="@+id/slopeRadioGroup1"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slope_FlatRadioButton"
+	                android:tag="@string/slope_fragment_slope_1"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_slope_flat"
+	                android:button="@null"/>
+	              	                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slope_ModerateRadioButton"
+	                android:tag="@string/slope_fragment_slope_3"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_slope_moderate"
+	                android:button="@null"/>
+	            	              
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slope_HillyRadioButton"
+	                android:tag="@string/slope_fragment_slope_5"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_slope_hilly"
+	                android:button="@null"/>
+
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slope_VerySteepRadioButton"
+	                android:tag="@string/slope_fragment_slope_7"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:background="@drawable/radio_slope_verysteep"
+	                android:button="@null"/>
+	            	            	            	            
+	        </RadioGroup>
+		</LinearLayout>
+        
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".50"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="horizontal" >
+	        
+		    <RadioGroup
+		            android:id="@+id/slopeRadioGroup2"
+		            android:orientation="vertical"
+	            	android:gravity="center_horizontal"
+	            	android:layout_width="match_parent"
+	            	android:layout_height="match_parent" >
+		        
+		            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_slope_GentleRadioButton"
+		                android:tag="@string/slope_fragment_slope_2"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_margin="5dp"
+		                android:background="@drawable/radio_slope_gentle"
+		                android:button="@null"/>
+		            		            
+		            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_slope_RollingRadioButton"
+		                android:tag="@string/slope_fragment_slope_4"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_margin="5dp"
+		                android:background="@drawable/radio_slope_rolling"
+		                android:button="@null"/>
+		            		            
+		            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_slope_SteepRadioButton"
+		                android:tag="@string/slope_fragment_slope_6"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_margin="5dp"
+		                android:background="@drawable/radio_slope_steep"
+		                android:button="@null"/>
+		            		                         
+	        </RadioGroup>  
+		</LinearLayout>
+		
+    </LinearLayout>
+    
+   	</LinearLayout>
+   
+</ScrollView>

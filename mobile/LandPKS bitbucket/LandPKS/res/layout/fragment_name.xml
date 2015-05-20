@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/fragment_name_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:focusable="true"
+	    android:focusableInTouchMode="true">
+	        
+	    <TextView
+	        android:id="@+id/nameLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/name_fragment_plot_name" />
+	
+	    <!-- dummy view to prevent initial keyboard on some tablets -->
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:background="@android:color/transparent"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true">
+	    </LinearLayout>
+	    
+	    <EditText
+	        android:id="@+id/nameEditText"
+	        android:singleLine="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:nextFocusDown="@+id/organizationEditText"
+	        android:ems="10" >
+	    </EditText>
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	    >
+		    <TextView 
+		        android:id="@+id/name_fragment_testPlotLabel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/name_fragment_testPlotRadioGroup"
+	            android:text="Test plot?"
+		    />
+	   		<RadioGroup
+	            android:id="@+id/name_fragment_testPlotRadioGroup"
+	            android:orientation="horizontal"
+	            android:layout_below="@+id/name_fragment_testPlotLabel"
+	            android:layout_alignParentRight="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <RadioButton
+	                android:id="@+id/name_fragment_testPlot_yes_RadioButton"
+	                android:tag="true"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:text="Yes"
+	            />
+	
+	            <RadioButton
+	                android:id="@+id/name_fragment_testPlot_no_RadioButton"
+	                android:tag="false"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:text="No"
+	            />
+	        </RadioGroup>
+        </RelativeLayout>
+	            	            	    	    
+	        	        
+	    <TextView
+	        android:id="@+id/recorderNameLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/name_fragment_recorder_name" />
+	
+	    <EditText
+	        android:id="@+id/recorderNameEditText"
+	        android:singleLine="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:enabled="false"
+	        android:inputType="textPersonName" />
+	
+	    <TextView
+	        android:id="@+id/organizationLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/name_fragment_organization" />
+	
+	    <EditText
+	        android:id="@+id/organizationEditText"
+	        android:singleLine="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:nextFocusDown="@+id/latitudeEditText"
+	        android:ems="10" />
+	
+	    
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+		    <TextView
+		        android:id="@+id/locationLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:textStyle="bold"
+		        android:text="@string/name_fragment_location" />
+	    
+		    <Button 
+		        android:id="@+id/fragment_name_GPS_start_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+        		style="?android:attr/buttonStyleSmall"
+		        android:text="@string/name_fragment_start_gps"
+		    />
+		    
+		    <Button 
+		        android:id="@+id/fragment_name_GPS_cancel_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+        		style="?android:attr/buttonStyleSmall"
+        		android:visibility="gone"
+		        android:text="@string/name_fragment_stop_gps"
+		    />
+		</LinearLayout>
+		
+	    <TextView
+	        android:id="@+id/latitudeLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/name_fragment_latitude" />
+	
+	    <EditText
+	        android:id="@+id/latitudeEditText"
+	        android:singleLine="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="number|numberSigned|numberDecimal"
+	        android:nextFocusDown="@+id/longitudeEditText"
+	        android:ems="10" />
+	    
+	   	<TextView
+	        android:id="@+id/longitudeLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/name_fragment_longitude" />
+	
+	    <EditText
+	        android:id="@+id/longitudeEditText"
+	        android:singleLine="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="number|numberSigned|numberDecimal"
+	        android:nextFocusDown="@+id/nameEditText"
+	        android:ems="10" />
+	    
+	</LinearLayout>
+</ScrollView>

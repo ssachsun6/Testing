@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_resource_soil_texture_gritty">Gritty</string>
+    <string name="server_resource_soil_texture_smooth">Smooth</string>
+    <string name="server_resource_soil_texture_neither">Neither gritty nor smooth</string>
+    
+    <string name="server_resource_slope_1">flat (0-2%)</string>
+    <string name="server_resource_slope_2">gentle (3-5%)</string>
+    <string name="server_resource_slope_3">moderate (6-10%)</string>
+    <string name="server_resource_slope_4">rolling (11-15%)</string>
+    <string name="server_resource_slope_5">hilly (16-30%)</string>
+    <string name="server_resource_slope_6">steep (31-60%)</string>
+    <string name="server_resource_slope_7">very steep (&gt;60%)</string>
+ 
+    
+    <string name="server_resource_slope_shape_1">concave, concave</string>
+    <string name="server_resource_slope_shape_2">concave, convex</string>
+    <string name="server_resource_slope_shape_3">concave, linear</string>
+    <string name="server_resource_slope_shape_4">convex, concave</string>
+    <string name="server_resource_slope_shape_5">convex, convex</string>
+    <string name="server_resource_slope_shape_6">convex, linear</string>
+    <string name="server_resource_slope_shape_7">linear, concave</string>
+    <string name="server_resource_slope_shape_8">linear, convex</string>
+    <string name="server_resource_slope_shape_9">linear, linear</string>
+ 
+    <string name="server_resource_slope_curve_concave">CONCAVE</string>
+    <string name="server_resource_slope_curve_convex">CONVEX</string>
+    <string name="server_resource_slope_curve_linear">LINEAR</string>
+    <string name="server_resource_slope_curve_separator">,</string>
+    <string name="server_resource_slope_curve_down_position">0</string>
+    <string name="server_resource_slope_curve_cross_position">1</string>
+    
+    <string name="server_resource_soil_horizon_1">0-1cm</string>
+    <string name="server_resource_soil_horizon_2">1-10cm</string>
+    <string name="server_resource_soil_horizon_3">10-20cm</string>
+    <string name="server_resource_soil_horizon_4">20-50cm</string>
+    <string name="server_resource_soil_horizon_5">50-70cm</string>
+    <string name="server_resource_soil_horizon_6">70-100cm</string>
+    <string name="server_resource_soil_horizon_7">100-120cm</string>
+    
+    <string name="server_resource_soil_texture_sand">SAND</string>
+    <string name="server_resource_soil_texture_loamy_sand">LOAMY SAND</string>
+    <string name="server_resource_soil_texture_sandy_loam">SANDY LOAM</string>
+    <string name="server_resource_soil_texture_silt_loam">SILT LOAM</string>
+    <string name="server_resource_soil_texture_loam">LOAM</string>
+    <string name="server_resource_soil_texture_sandy_clay_loam">SANDY CLAY LOAM</string>
+    <string name="server_resource_soil_texture_silty_clay_loam">SILTY CLAY LOAM</string>
+    <string name="server_resource_soil_texture_clay_loam">CLAY LOAM</string>
+    <string name="server_resource_soil_texture_sandy_clay">SANDY CLAY</string>
+    <string name="server_resource_soil_texture_silty_clay">SILTY CLAY</string>
+    <string name="server_resource_soil_texture_clay">CLAY</string>
+    
+    <string name="server_resource_soil_texture_ribbon_length_1">&lt;2.5cm</string>
+    <string name="server_resource_soil_texture_ribbon_length_2">2.5-5cm</string>
+    <string name="server_resource_soil_texture_ribbon_length_3">&gt;5cm</string>
+
+    <string name="server_resource_land_cover_1">tree cover, &gt;25% canopy</string>
+    <string name="server_resource_land_cover_2">shrub cover, &gt;50% cover</string>
+   	<string name="server_resource_land_cover_3">grassland, &gt;50% grass</string>
+    <string name="server_resource_land_cover_4">savanna, 10-20% tree cover</string>
+    <string name="server_resource_land_cover_5">garden/mixed</string>
+    <string name="server_resource_land_cover_6">cropland</string>
+    <string name="server_resource_land_cover_7">developed</string>
+    <string name="server_resource_land_cover_8">barren, &lt;5% veg cover</string>
+    <string name="server_resource_land_cover_9">water</string>
+                
+	<string name="server_resource_photo_subject_landscape_north">landscapeNorth</string>
+	<string name="server_resource_photo_subject_landscape_east">landscapeEast</string>
+	<string name="server_resource_photo_subject_landscape_south">landscapeSouth</string>
+	<string name="server_resource_photo_subject_landscape_west">landscapeWest</string>
+	<string name="server_resource_photo_subject_soil_pit">soilPit</string>
+	<string name="server_resource_photo_subject_soil_samples">soilSamples</string>
+
+	<string name="server_resource_photoupload_file_parameter_name">photo</string>
+	<string name="server_resource_photoupload_plotid_parameter_name">plotID</string>
+	<string name="server_resource_photoupload_photo_subject_parameter_name">photoSubject</string>
+			
+    <string name="server_resource_rock_volume_1">0-15%</string>
+    <string name="server_resource_rock_volume_2">15-35%</string>
+   	<string name="server_resource_rock_volume_3">35-60%</string>
+    <string name="server_resource_rock_volume_4">&gt;60%</string>
+    <string name="server_resource_rock_volume_5">Restrictive layer</string>
+		
+</resources>

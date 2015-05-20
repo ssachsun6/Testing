@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".30"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="horizontal" >
+		
+		    <LinearLayout
+		        android:layout_height="match_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight=".50"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal" >
+		        <RadioGroup
+		            android:id="@+id/fragment_heightGapSpecies_heightRG01"
+		            android:orientation="vertical"
+		            android:gravity="center_horizontal"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" >
+		
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG01_RB01"
+		                android:tag="@string/fragment_heightGapSpecies_height_01"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_01"
+		                android:button="@null"/>
+		            	                 
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG01_RB02"
+		                android:tag="@string/fragment_heightGapSpecies_height_03"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_03"
+		                android:button="@null"/>
+		            	              
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG01_RB03"
+		                android:tag="@string/fragment_heightGapSpecies_height_05"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_05"
+		                android:button="@null"/>
+	
+		        </RadioGroup>
+	        </LinearLayout>
+	        
+		    <LinearLayout
+		        android:layout_height="match_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight=".50"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal" >
+		        <RadioGroup
+		            android:id="@+id/fragment_heightGapSpecies_heightRG02"
+		            android:orientation="vertical"
+		            android:gravity="center_horizontal"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" >
+		        
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG02_RB01"
+		                android:tag="@string/fragment_heightGapSpecies_height_02"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_02"
+		                android:button="@null"/>
+		            	                 
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG02_RB02"
+		                android:tag="@string/fragment_heightGapSpecies_height_04"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_04"
+		                android:button="@null"/>
+		            	              
+		            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+		                android:id="@+id/fragment_heightGapSpecies_heightRG02_RB03"
+		                android:tag="@string/fragment_heightGapSpecies_height_06"
+		        		android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		                android:layout_marginTop="5dp"
+		                android:background="@drawable/radio_height_06"
+		                android:button="@null"/>
+		             	             
+		        </RadioGroup>  
+	        </LinearLayout>
+		     
+	    </LinearLayout>
+       
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".05"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:orientation="horizontal" >
+	        
+		     <View 
+	        	android:layout_centerHorizontal="true"
+		    	android:layout_width="3dp"
+		    	android:layout_height="match_parent"
+		    	android:background="#ff999999" />
+		     
+	    </LinearLayout>
+	
+	   	<LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_weight=".30"
+	        android:layout_height="match_parent"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+	
+            <RadioGroup
+                android:id="@+id/fragment_heightGapSpecies_basalGapRG"
+	            android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+	            android:gravity="center_horizontal"
+            >
+
+	            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_heightGapSpecies_basalGapRG_yesRB"
+	                android:tag="@string/fragment_heightGapSpecies_basalGap_yes"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_basalgap_yes"
+	                android:button="@null"/>
+               
+	            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_heightGapSpecies_basalGapRG_noRB"
+	                android:tag="@string/fragment_heightGapSpecies_basalGap_no"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_basalgap_no"
+	                android:button="@null"/>
+	            
+            </RadioGroup>
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp" >
+	          	<View 
+			    	android:layout_width="match_parent"
+			    	android:layout_height="3dp"
+			    	android:layout_marginTop="5dp"
+			    	android:background="#ff999999" />
+          	</LinearLayout>
+            
+            <RadioGroup
+                android:id="@+id/fragment_heightGapSpecies_canopyGapRG"
+	            android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+	            android:gravity="center_horizontal"
+            >
+
+	            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_heightGapSpecies_canopyGapRG_yesRB"
+	                android:tag="@string/fragment_heightGapSpecies_canopyGap_yes"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_canopygap_yes"
+	                android:button="@null"/>
+               
+	            <com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_heightGapSpecies_canopyGapRG_noRB"
+	                android:tag="@string/fragment_heightGapSpecies_canopyGap_no"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_canopygap_no"
+	                android:button="@null"/>
+	            
+            </RadioGroup>
+            
+            
+		</LinearLayout>	    
+
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".05"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:orientation="horizontal" >
+	        
+		     <View 
+	        	android:layout_centerHorizontal="true"
+		    	android:layout_width="3dp"
+		    	android:layout_height="match_parent"
+		    	android:background="#ff999999" />
+		     
+	    </LinearLayout>
+	    	    
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_weight=".30"
+	        android:layout_height="match_parent"
+	        android:gravity="left"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+            
+	  	    <TextView
+		        android:id="@+id/fragment_heightGapSpecies_speciesLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/fragment_heightGapSpecies_speciesLabel" />
+		    
+	  	    <TextView
+		        android:id="@+id/fragment_heightGapSpecies_speciesList"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:paddingTop="10dp"
+		        android:text="@string/fragment_heightGapSpecies_speciesList_dummy" />
+	  	    
+		    <AutoCompleteTextView
+			    android:id="@+id/fragment_heightGapSpecies_species_autocompleteTV"
+			    android:paddingTop="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:inputType="text"
+			    android:completionThreshold="1"
+			    android:imeOptions="actionDone"
+			/>
+		    
+		    <Button 
+			    android:id="@+id/fragment_heightGapSpecies_species_addSpeciesButton"
+			    android:paddingTop="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:text="@string/fragment_heightGapSpecies_speciesList_addSpecies"
+		    />
+
+ 		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		    >
+          	
+ 		        <LinearLayout
+	 		        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"			        
+			        android:orientation="vertical">		            
+	          		<TextView
+	          		    android:id="@+id/fragment_heightGapSpecies_speciesDensityTV_1"
+		 		        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/fragment_heightGapSpecies_species1Label"
+				    />
+	          		<EditText
+	          		    android:id="@+id/fragment_heightGapSpecies_speciesDensityET_1"
+		 		        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	        			android:inputType="number|numberSigned|numberDecimal"
+	  			     	android:singleLine="true"
+				        android:nextFocusDown="@+id/fragment_heightGapSpecies_speciesDensityET_2"	  			     	
+				    />
+	          	</LinearLayout>
+          		
+          		   
+ 		        <LinearLayout
+	 		        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"			        
+			        android:orientation="vertical">
+	 		        <TextView
+	          		    android:id="@+id/fragment_heightGapSpecies_speciesDensityTV_2"
+		 		        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/fragment_heightGapSpecies_species2Label"
+				    />
+	          		<EditText
+	          		    android:id="@+id/fragment_heightGapSpecies_speciesDensityET_2"
+		 		        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	        			android:inputType="number|numberSigned|numberDecimal"
+	  			     	android:singleLine="true"
+				    />						    
+			    </LinearLayout>    
+          		    
+          	</RelativeLayout>
+		    		    	    	    
+		</LinearLayout>/
+	    		    	       	    
+    </LinearLayout>
+    
+
+</ScrollView>

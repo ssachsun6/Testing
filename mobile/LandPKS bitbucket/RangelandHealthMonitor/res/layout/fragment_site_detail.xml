@@ -1,0 +1,135 @@
+<!--  
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transectsegment_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:text="???"
+    android:textIsSelectable="true"
+    tools:context="com.noisyflowers.rangelandhealthmonitor.android.fragments.SiteDetailFragment" />
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+ >
+ 
+	<TextView   
+        android:id="@+id/fragment_site_detail_textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text=""
+	/>    
+	<Button
+        android:id="@+id/fragment_site_detail_button_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fragment_site_detail_textview_status"
+        android:visibility="gone"
+        android:text="@string/fragment_site_detail_status_summary_button"
+    />
+	
+    
+    <Button
+        android:id="@+id/fragment_site_detail_button_site_characterization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/fragment_site_detail_status_site_data_button"
+    />
+    <Button
+        android:id="@+id/fragment_site_detail_button_transect_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/fragment_site_detail_button_site_characterization"
+        android:textSize="30sp"
+        android:text="@string/fragment_site_detail_status_direction_1_button"
+    />
+    <Button
+        android:id="@+id/fragment_site_detail_button_transect_south"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fragment_site_detail_button_site_characterization"
+        android:textSize="30sp"
+        android:text="@string/fragment_site_detail_status_direction_3_button"
+    />
+    <Button
+        android:id="@+id/fragment_site_detail_button_transect_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/fragment_site_detail_button_site_characterization"
+        android:textSize="30sp"
+        android:text="@string/fragment_site_detail_status_direction_2_button"
+    />
+     <Button
+        android:id="@+id/fragment_site_detail_button_transect_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/fragment_site_detail_button_site_characterization"
+        android:textSize="30sp"
+        android:text="@string/fragment_site_detail_status_direction_4_button"
+    />
+
+
+    <Button
+        android:id="@+id/fragment_site_detail_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/fragment_site_detail_status_submit_button"
+    />
+    <!--
+    <Button
+        android:id="@+id/fragment_site_detail_button_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fragment_site_detail_button_submit"
+        android:visibility="gone"
+        android:text="Summary"
+    />
+    -->
+     <!--
+     <Button
+        android:id="@+id/fragment_site_detail_button_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="\?"
+    />
+    -->
+    <Spinner
+        android:id="@+id/fragment_site_detail_spinner_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+	/>    
+	<TextView   
+        android:id="@+id/fragment_site_detail_textview_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_site_detail_spinner_date"
+        android:text="@string/fragment_site_detail_date_label"
+        android:visibility="gone"
+	/>    
+	     
+</RelativeLayout>
+    

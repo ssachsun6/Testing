@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rangeland Monitor</string>
+    <string name="title_site_detail"></string>
+    <string name="title_site_summary"></string>
+    <string name="title_transect"></string>
+    <string name="title_segment"></string>
+    
+    <string name="InfoFragment_display_name">Info</string>
+    <string name="ChangelogFragment_display_name">Changelog</string>
+    <string name="LicenseFragment_display_name">License</string>
+    <string name="LegalNoticesFragment_display_name">Legal Notices</string>
+    
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="new_site">New site</string>
+    
+    <string name="action_create_plot">Create New Plot</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_copy_to_sd">Copy to SD card</string>
+    <string name="action_about">About</string>
+    <string name="action_help">Help</string>
+    
+   	<string name="activity_transect_transect">Transect</string>
+   	
+   	<string name="fragment_site_detail_submitted_message">Transect data has been marked for background upload. You will receive a notification when upload is complete.</string>
+   	<string name="fragment_site_detail_date_label">View previously submitted data</string>
+   	<string name="fragment_site_detail_spinner_choose_date">&lt;choose date&gt;</string>
+   	<string name="fragment_site_detail_status_uploaded">Uploaded</string>
+   	<string name="fragment_site_detail_status_upload_pending">Upload pending</string>
+   	<string name="fragment_site_detail_status_summary_button">Summary</string>
+   	<string name="fragment_site_detail_status_submit_button">Submit</string>
+   	<string name="fragment_site_detail_status_site_data_button">Land\nInfo</string>
+   	<string name="fragment_site_detail_status_direction_1_button">N</string>
+   	<string name="fragment_site_detail_status_direction_2_button">E</string>
+   	<string name="fragment_site_detail_status_direction_3_button">S</string>
+   	<string name="fragment_site_detail_status_direction_4_button">W</string>
+   	   									
+   	<string name="fragment_transect_direction_1">North</string>
+   	<string name="fragment_transect_direction_2">East</string>
+   	<string name="fragment_transect_direction_3">South</string>
+   	<string name="fragment_transect_direction_4">West</string>
+   	   	
+    <string name="fragment_cover_cover_1">Bare ground</string>
+   	<string name="fragment_cover_cover_2">Tree</string>
+    <string name="fragment_cover_cover_3">Shrub</string>
+    <string name="fragment_cover_cover_4">Sub-shrub</string>
+    <string name="fragment_cover_cover_5">Perennial grass</string>
+    <string name="fragment_cover_cover_6">Annual grass</string>
+    <string name="fragment_cover_cover_7">Herbaceous litter</string>
+    <string name="fragment_cover_cover_8">Woody litter</string>
+   	<string name="fragment_cover_cover_9">Rock fragment</string>
+
+   	<string name="fragment_heightGapSpecies_height_01">&lt;10cm</string>
+   	<string name="fragment_heightGapSpecies_height_02">10-50cm</string>
+   	<string name="fragment_heightGapSpecies_height_03">50cm-1m</string>
+   	<string name="fragment_heightGapSpecies_height_04">1-2m</string>
+   	<string name="fragment_heightGapSpecies_height_05">2-3m</string>
+   	<string name="fragment_heightGapSpecies_height_06">&gt;3m</string>
+   	
+   	<!--
+   	<string name="display_segment_range_1">0-5m</string>
+	<string name="display_segment_range_2">5-10m</string>
+	<string name="display_segment_range_3">10-15m</string>
+	<string name="display_segment_range_4">15-20m</string>
+	<string name="display_segment_range_5">20-25m</string>
+	-->
+   	<string name="display_segment_range_1">5m</string>
+	<string name="display_segment_range_2">10m</string>
+	<string name="display_segment_range_3">15m</string>
+	<string name="display_segment_range_4">20m</string>
+	<string name="display_segment_range_5">25m</string>
+			
+
+   	<string name="fragment_heightGapSpecies_basalGap_yes">Basal gap</string>
+   	<string name="fragment_heightGapSpecies_basalGap_no">No basal gap</string>
+   	<string name="fragment_heightGapSpecies_canopyGap_yes">Canopy gap</string>
+   	<string name="fragment_heightGapSpecies_canopyGap_no">No canopy gap</string>
+
+   	<string name="fragment_heightGapSpecies_speciesLabel">Species density</string>
+   	<string name="fragment_heightGapSpecies_speciesList_dummy">&lt;add species below&gt;</string>
+   	<string name="fragment_heightGapSpecies_speciesList_addSpecies">Add species name</string>
+   	<string name="fragment_heightGapSpecies_species1Label">Species 1</string>
+   	<string name="fragment_heightGapSpecies_species2Label">Species 2</string>
+ 
+   	<string name="fragment_site_summary_site_summary_label">Site Summary</string>
+   	<string name="fragment_site_summary_landcover_label">Cover</string>
+   	<string name="fragment_site_summary_landcover_bare_label">Bare ground</string>
+   	<string name="fragment_site_summary_landcover_cover_label">Total cover</string>
+   	<string name="fragment_site_summary_foliar_cover_composition_label">Plant cover</string>
+   	<string name="fragment_site_summary_nonfoliar_cover_composition_label">Nonfoliar cover composition</string>
+   	<string name="fragment_site_summary_landcover_foliar_cover_label">Foliar cover</string>
+   	<string name="fragment_site_summary_canopy_height_label">Canopy Height</string>
+   	<string name="fragment_site_summary_gaps_label">Gaps</string>
+   	<string name="fragment_site_summary_canopy_gaps_label">Canopy Gaps</string>
+   	<string name="fragment_site_summary_basal_gaps_label">Basal Gaps</string>
+   	<string name="fragment_site_summary_species_density_label">Species Density</string>
+
+   	<string name="fragment_site_summary_total_cover_help">% of ground covered by plants, litter, or rock.\n\n(# points of any cover type/total # points)</string>
+   	<string name="fragment_site_summary_bare_ground_help">% of ground not covered by plants, litter and rock.\n\n(# points bare ground/total # points)</string>
+   	<string name="fragment_site_summary_foliar_cover_help">% cover of all plant elements combined.\n\n(# points with any plant/total # points)</string>
+   	<string name="fragment_site_summary_foliar_composition_help">% cover of each specific plant type.\n\n(# points with plant type/total # points)</string>
+   	<string name="fragment_site_summary_canopy_height_help">% of plants in each height class.\n\n(# points with height class/total # points)</string>
+   	<string name="fragment_site_summary_gaps_help">% of ground occurring in large gaps (&gt;1m) between plant bases and between plant canopies.\n\n(# points with canopy gap/ total # points, # points plant basal gaps /total # points)</string>
+   	<string name="fragment_site_summary_species_density_help">The number of each individual plant species per plot (calculated per m\u00B2).\n\n(# individual plants observed of the species of interest/area sampled)</string>
+   									   	   							   			   	   		
+    <string name="SiteListActivity_LandPKS_install_message">Land Info V0.0.33 or greater must be installed and configured before this app can run.</string>
+    <string name="SiteListActivity_LandPKS_configure_message">Land Info must be configured with a user account.</string>
+    <string name="SiteListActivity_backing_up_db">Copying database to removable SD card...</string>
+    <string name="SiteListActivity_backing_up_db_success">Database successfully copied to SD card.</string>
+    <string name="SiteListActivity_backing_up_db_error">Unable to copy database.  Verify that SD card is present and writable.</string>
+    
+    <string name="SiteDetailFragment_LandPKS_not_found">Cannot find Land Info app</string>
+    
+    <string name="title_activity_about">About</string>
+    <string name="about_activity_coordinated">coordinated by:\n  The Jornada,\n  New Mexico State University</string>
+    <string name="about_activity_funded">funded by:\n  USAID</string>
+    <string name="about_activity_developed">developed by:\n  Noisy Flowers LLC</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pref_sync_wifi_only">Wifi only</string>
+    <string name="pref_sync_wifi_only_summ">Sync with server only when on wifi</string>
+    <string name="pref_ui_theme">Color scheme</string>
+    <string name="pref_ui_theme_light_switch_text">Light</string>
+    <string name="pref_ui_theme_dark_switch_text">Dark</string>
+    <string name="pref_ui_theme_light_summary">Light</string>
+    <string name="pref_ui_theme_dark_summary">Dark</string>
+    <string name="pref_ui_theme_summ">Use light theme</string>
+    
+    <string name="fragment_site_list_help">
+        <![CDATA[
+        <h1>Plot List Help</h1>
+        <p>This screen displays a selectable list of your plots.</p>
+        <p>New plots are added via the Land Info app, transparently started when you click the \"+\" icon.</p>
+        <p>While you can enter transect data for incomplete plots, plots must be completed and uploaded by Land Info before transect data can be uploaded.</p>
+        <p>Clicking a plot name will take you to the Plot Detail screen to allow entering new or viewing past transect data.</p>
+        <p>Checkmarks indicate whether a plot has ever had transects uploaded.</p>
+    	]]>
+    </string>
+    <string name="fragment_site_detail_help">
+        <![CDATA[
+        <h1>Plot Detail Help</h1>
+        <p>This screen allows you to enter transect data for an individual plot and to select past transect data for review.</p>
+        <p>The Plot Data button in the center of the screen will start the Land Info app for entering and/or review of plot data.</p>
+        <p>The four buttons surrounding the Plot Data button allow you to enter current transect data for each corresponding cardinal direction.</p>
+        <p>When each transect is complete, a checkmark will appear on its corresponding button.</p>
+        <p>When all transects are complete, the Submit button will activate, allowing you to upload current data to the server.</p>
+        <p>Once data is submitted, the Submit button will deactivate and display a green checkmark, indicating that the current data has been submitted.  A message will display in the upper left corner of the screen with pending/upload staus of the current data.</p>
+        <p>Transect data can only be entered once in a 24 hour period.</p>
+        <p>Past transect data can be viewed via the \"View previously submitted data\" dropdown at the bottom of the screen.  The dropdown presents a list of previous dates. Selecting one will load this screen with that date\'s data.</p>
+        <p>When viewing previous data, a Summary button is available that will take you to a Summary screen. You can also view individual transect data via the cardinal direction buttons.</p>
+    	]]>
+    </string>
+    <string name="fragment_transect_help">
+        <![CDATA[
+        <h1>Transect Help</h1>
+        <p>This screen contains a selectable list of transect segments.</p>
+        <p>Clicking a segment name will take you to the Segment data entry screens, beginning with the Cover screen.</p>
+        <p>When data entry is complete for a given segement, that segment\'s list item will display a checkmark.</p>
+    	]]>
+    </string>
+    <string name="fragment_cover_help">
+        <![CDATA[
+        <h1>Cover Help</h1>
+        <p>This screen allows you to enter cover types for each sample point along the measuring stick.</p>
+        <p>At the top is a representation of the measuring stick.</p>
+        <p>In a column below each sample point are buttons for the various cover types.</p>
+        <p>At least one cover type must be selected for each sample point.</p>
+        <p>The first button in each column is for bare ground.  This button is mutually exclusive of all the others. Selecting it disables the other buttons in the column.</p>
+        <p>If bare ground is not selected, you can select one or more of the rest of the cover types.</p>
+        <p>When a selection has been made in each column, a checkmark is displayed on the Cover tab at the top of the screen.</p>
+        <p>Swiping right-to-left will take you to the other Segment data screen: Height/Gap/Species.</p>
+    	]]>
+    </string>
+    <string name="fragment_heightgapspecies_help">
+        <![CDATA[
+        <h1>Height/Gap/Species Help</h1>
+        <p>This screen allows you to enter canopy height, plant gap, and species data for the segment.</p>
+        <p>The left section contains buttons for canopy height. Use your measuring stick to estimate height.</p>
+        <p>The center section contains buttons for basal and canopy gaps. Lay your measuring stick on the ground, and select the basal/canopy gap buttons that best match the flora configuration around it.</p>
+        <p>The right section contains fields for entering observed species and species counts.</p>
+    	]]>
+    </string>
+    <string name="fragment_summary_help" formatted="false">
+        <![CDATA[
+        <h1>Summary Help</h1>
+        <p>This screen contains a summary of the plot\'s transect data for this date. Definitions of key summary statistics presented below.</p>
+        <p><b>Total cover:</b> % of ground covered by plants, litter, or rock. (# points of any cover type/total # points)</p>
+        <p><b>Bare ground:</b> % of ground not covered by plants, litter and rock. (# points bare ground/total # points)</p>
+        <p><b>Foliar cover:</b> % cover of all plant elements combined. (# points with any plant/total # points)</p>
+        <p><b>Plant cover:</b> % cover of each specific plant type. (# points with plant type/total # points)</p>
+        <p><b>Canopy height:</b> % of plants in each height class. (# points with height class/total # points)</p>
+        <p><b>Gaps:</b> % of ground occurring in large gaps (&gt;1m) between plant bases and between plant canopies. (# points with canopy gap/ total # points, # points plant basal gaps /total # points)</p>
+        <p><b>Species density:</b> The number of each individual plant species per plot (calculated per m\u00B2). (# individual plants observed of the species of interest/area sampled)</p>
+    	]]>
+    </string>
+    
+</resources>

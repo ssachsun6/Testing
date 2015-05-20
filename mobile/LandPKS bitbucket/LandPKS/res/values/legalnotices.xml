@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="legalnotice01">
+        <![CDATA[
+	<h2>Open Source Software Used By This App</h2>
+	
+	<p><b>AFreeChart</b><br>
+	Copyright 2010,2011 by ICOMSYSTECH Co.,Ltd<br>
+	<a href=\"http://www.gnu.org/licenses/lgpl.html\">GNU Lesser General Public License</a></p>
+   
+	<p><b>Android Support Libraries</b><br>
+	Copyright 2005-2008, The Android Open Source Project<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+
+	<p><b>Apache HTTP Components</b><br>
+	Copyright 2005-2015 The Apache Software Foundation<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+
+	<p><b>Google Cloud Endpoints client libraries and tooling</b><br>
+	Copyright Google Inc.<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+			
+	<p><b>Google Maps</b><br>
+	Copyright 2005-2008, The Android Open Source Project<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+	
+	<p><b>Google Play Services</b><br>
+	Copyright 2005-2008, The Android Open Source Project<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+
+	<p><b>Gson JSON parser</b><br>
+	Copyright Google Inc.<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+   
+	<p><b>Jackson JSON parser</b><br>
+	Copyright 2009 FasterXML, LLC<br>
+	<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache License 2.0</a></p>
+    
+    	]]>
+    </string>
+    
+</resources>

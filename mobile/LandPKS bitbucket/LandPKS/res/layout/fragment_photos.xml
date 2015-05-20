@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <TextView
+        android:id="@+id/fragment_photos_main_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	-->
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" 
+	    android:layout_marginTop="10dp"
+	>
+	    
+	    <TextView
+	        android:id="@+id/fragment_photos_landscape_heading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/photos_fragment_landscape_heading"
+	    />
+	    
+	    <!--
+	    <Button
+	        android:id="@+id/fragment_photos_startLandscapePhotosButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:paddingTop="5dp"
+	        android:text="Take landscape photos" />
+	    -->
+	    <ImageButton
+	        android:id="@+id/fragment_photos_startLandscapePhotosButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:src="?attr/customAddIcon" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fragment_photos_landscape_north_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_landscape_north_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_landscape_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+    
+    <TextView
+        android:id="@+id/fragment_photos_landscape_east_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_landscape_east_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_landscape_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+    
+    <TextView
+        android:id="@+id/fragment_photos_landscape_south_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_landscape_south_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_landscape_south"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+    
+    <TextView
+        android:id="@+id/fragment_photos_landscape_west_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_landscape_west_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_landscape_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+ 
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" 
+	    android:layout_marginTop="20dp"
+	>
+	    
+	    <TextView
+	        android:id="@+id/fragment_photos_pit_heading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/photos_fragment_pit_heading"
+	    />
+	    
+	    <!-- 
+	    <Button
+	        android:id="@+id/fragment_photos_startPitPhotoButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:paddingTop="5dp"
+	        android:text="Take pit photo" />
+	    -->
+	    <ImageButton
+	        android:id="@+id/fragment_photos_startPitPhotoButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:src="?attr/customAddIcon" />
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/fragment_photos_pit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_pit_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_pit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" 
+	    android:layout_marginTop="20dp"
+	>
+	    
+	    <TextView
+	        android:id="@+id/fragment_photos_samples_heading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:text="@string/photos_fragment_samples_heading"
+	    />
+	    
+	    <!--
+	    <Button
+	        android:id="@+id/fragment_photos_startSamplesPhotoButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:paddingTop="5dp"
+	        android:text="Take samples photo" />
+	    -->
+	    <ImageButton
+	        android:id="@+id/fragment_photos_startSamplesPhotoButton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:src="?attr/customAddIcon" />
+	</LinearLayout>
+   
+    <TextView
+        android:id="@+id/fragment_photos_samples_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <TextView
+        android:id="@+id/fragment_photos_samples_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:visibility="gone"
+    />
+    <ImageView
+        android:id="@+id/fragment_photos_samples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+    />
+</LinearLayout>
+</ScrollView>

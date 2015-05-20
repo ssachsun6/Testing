@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotosActivity" >
+
+  	<FrameLayout
+    	android:id="@+id/camera_preview"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    />
+  	
+    <TextView
+        android:id="@+id/activity_photos_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text=""
+    />
+
+    <TextView
+        android:id="@+id/activity_photos_instruction"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ff0000"
+        android:text="@string/photos_activity_instruction"
+        android:visibility="gone"
+    />
+    
+	<ImageButton
+		android:id="@+id/activity_photos_button_capture"
+		android:layout_width="wrap_content"
+		android:layout_height="80dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="5dp"
+		android:clickable="false"
+		android:visibility="invisible"
+		android:src="@drawable/ic_menu_camera" 
+	/>
+   
+    <TextView
+        android:id="@+id/activity_photos_compass_toggle_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ff0000"
+        android:text="Compass:"
+        android:visibility="gone"
+    />
+	<ToggleButton 
+		android:id="@+id/activity_photos_compass_toggle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/activity_photos_compass_toggle_label"
+		android:checked="true"
+        android:visibility="gone"
+	/>
+	
+    <com.noisyflowers.landpks.android.util.CompassView
+    	android:id="@+id/activity_photos_compass"
+    	android:layout_width="300dp"
+    	android:layout_height="300dp" 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+    />
+        
+</RelativeLayout>

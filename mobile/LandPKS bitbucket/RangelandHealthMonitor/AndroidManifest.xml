@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:versionCode="15" 
+    android:versionName="0.0.15" 
+    package="com.noisyflowers.rangelandhealthmonitor.android">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+
+    <!-- This is a hacky work-around for accessing the ContentProvider when this app is installed before LandPKS -->
+    <permission android:name="com.noisyflowers.landpks.READ"/>
+    
+    <uses-permission android:name="com.noisyflowers.landpks.READ"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_LOGS" /> 
+	<!-- <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />  -->
+	
+   <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.noisyflowers.rangelandhealthmonitor.android.RHMApplication" android:theme="@style/AppTheme">
+        
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        
+        <service android:name="com.noisyflowers.rangelandhealthmonitor.android.service.DataSyncService" >
+        </service>
+
+        <receiver android:name="com.noisyflowers.rangelandhealthmonitor.android.service.AlarmReceiver" >
+        	<intent-filter>   
+                <action android:name="android.intent.action.BOOT_COMPLETED" />   
+            </intent-filter>   
+        </receiver>
+
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/title_site_detail" android:launchMode="singleTop" android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteDetailActivity" android:parentActivityName="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.noisyflowers.rangelandhealthmonitor.android.SiteListActivity"/>
+        </activity>
+        
+        <activity android:label="@string/title_site_summary" android:launchMode="singleTop" android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteSummaryActivity" android:parentActivityName="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteDetailActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.noisyflowers.rangelandhealthmonitor.android.SiteDetailActivity"/>
+        </activity>
+        
+        <activity android:label="@string/title_transect" android:launchMode="singleTop" android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.TransectActivity" android:parentActivityName="com.noisyflowers.rangelandhealthmonitor.android.activities.SiteDetailActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.noisyflowers.rangelandhealthmonitor.android.SiteDetailActivity"/>
+        </activity>        
+        
+        <activity android:configChanges="orientation|keyboardHidden" android:label="@string/title_transect" android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.SegmentActivity" android:parentActivityName="com.noisyflowers.rangelandhealthmonitor.android.activities.TransectActivity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.noisyflowers.rangelandhealthmonitor.android.TransectActivity"/>
+        </activity>
+        
+        <activity
+            android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.noisyflowers.rangelandhealthmonitor.android.activities.SettingsActivity"
+            android:label="@string/menu_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <receiver android:name="com.noisyflowers.rangelandhealthmonitor.android.service.AccountChangeReceiver">
+            <intent-filter>
+                <action android:name="com.noisyflowers.landpks.android.accountChange"/>
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

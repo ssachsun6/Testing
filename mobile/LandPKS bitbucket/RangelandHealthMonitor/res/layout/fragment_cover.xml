@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginTop="5dp"
+    >
+    
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	    >
+	        	        
+	        <ImageView
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/stick_left"
+        		android:adjustViewBounds="true"
+        		android:scaleType="fitXY"
+        	/>
+	        <TextView
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:textStyle="bold"
+        		android:text="10cm"
+        	/>
+	        	  
+		    <LinearLayout
+	            android:id="@+id/fragment_cover_coverSegment1"
+		        android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical" 
+	            android:tag="0"
+		    >
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_bare"
+	                android:tag="@string/fragment_cover_cover_1"
+	            />
+		       	
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp" >
+		          	<View 
+				    	android:layout_width="match_parent"
+				    	android:layout_height="3dp"
+				    	android:layout_marginTop="5dp"
+				    	android:background="#ff999999" />
+	          	</LinearLayout>
+		       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_tree"
+	                android:tag="@string/fragment_cover_cover_2"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_shrub"
+	                android:tag="@string/fragment_cover_cover_3"
+	            />
+		       	
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_sub_shrub"
+	                android:tag="@string/fragment_cover_cover_4"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_perennial_grass"
+	                android:tag="@string/fragment_cover_cover_5"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_annual"
+	                android:tag="@string/fragment_cover_cover_6"
+	            />
+		       			       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_herb_litter"
+	                android:tag="@string/fragment_cover_cover_7"
+	            />
+
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_wood_litter"
+	                android:tag="@string/fragment_cover_cover_8"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_rock"
+	                android:tag="@string/fragment_cover_cover_9"
+	            />     			       	
+		       			
+		    </LinearLayout>
+   		</LinearLayout>
+    	
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	    >
+	        	        
+	        <ImageView
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/stick_mid"
+        		android:adjustViewBounds="true"
+        		android:scaleType="fitXY"
+        	/>
+	        <TextView
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:textStyle="bold"
+        		android:text="30cm"
+        	/>
+	        
+		    <LinearLayout
+	            android:id="@+id/fragment_cover_coverSegment2"
+		        android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical" 
+	            android:tag="1"
+		    >
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_bare"
+	                android:tag="@string/fragment_cover_cover_1"
+	            />
+		        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp" >
+		          	<View 
+				    	android:layout_width="match_parent"
+				    	android:layout_height="3dp"
+				    	android:layout_marginTop="5dp"
+				    	android:background="#ff999999" />
+	          	</LinearLayout>
+		       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_tree"
+	                android:tag="@string/fragment_cover_cover_2"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_shrub"
+	                android:tag="@string/fragment_cover_cover_3"
+	            />
+		       	
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_sub_shrub"
+	                android:tag="@string/fragment_cover_cover_4"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_perennial_grass"
+	                android:tag="@string/fragment_cover_cover_5"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_annual"
+	                android:tag="@string/fragment_cover_cover_6"
+	            />
+		       			       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment1_button7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_herb_litter"
+	                android:tag="@string/fragment_cover_cover_7"
+	            />
+
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_wood_litter"
+	                android:tag="@string/fragment_cover_cover_8"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment2_button9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_rock"
+	                android:tag="@string/fragment_cover_cover_9"
+	            />     			       	
+	       			 
+		    </LinearLayout>
+	        	        
+    	</LinearLayout>
+
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	    >
+	        	        
+	        <ImageView
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/stick_mid"
+        		android:adjustViewBounds="true"
+        		android:scaleType="fitXY"
+        	/>
+	        <TextView
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:textStyle="bold"
+        		android:text="50cm"
+        	/>
+
+		    <LinearLayout
+	            android:id="@+id/fragment_cover_coverSegment3"
+		        android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical" 
+	            android:tag="2"
+		    >
+		    
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_bare"
+	                android:tag="@string/fragment_cover_cover_1"
+	            />
+		        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp" >
+		          	<View 
+				    	android:layout_width="match_parent"
+				    	android:layout_height="3dp"
+				    	android:layout_marginTop="5dp"
+				    	android:background="#ff999999" />
+	          	</LinearLayout>
+		       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_tree"
+	                android:tag="@string/fragment_cover_cover_2"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_shrub"
+	                android:tag="@string/fragment_cover_cover_3"
+	            />
+		       	
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_sub_shrub"
+	                android:tag="@string/fragment_cover_cover_4"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_perennial_grass"
+	                android:tag="@string/fragment_cover_cover_5"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_annual"
+	                android:tag="@string/fragment_cover_cover_6"
+	            />
+		       			       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_herb_litter"
+	                android:tag="@string/fragment_cover_cover_7"
+	            />
+
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_wood_litter"
+	                android:tag="@string/fragment_cover_cover_8"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment3_button9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_rock"
+	                android:tag="@string/fragment_cover_cover_9"
+	            />     			       	
+		       			    
+		    </LinearLayout>
+	        	        
+    	</LinearLayout>
+	    	    
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	    >
+	        	        
+	        <ImageView
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/stick_mid"
+        		android:adjustViewBounds="true"
+        		android:scaleType="fitXY"
+        	/>
+	        <TextView
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:textStyle="bold"
+        		android:text="70cm"
+        	/>
+	        
+		    <LinearLayout
+	            android:id="@+id/fragment_cover_coverSegment4"
+		        android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical" 
+	            android:tag="3"
+		    >
+		    
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_bare"
+	                android:tag="@string/fragment_cover_cover_1"
+	            />
+		        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp" >
+		          	<View 
+				    	android:layout_width="match_parent"
+				    	android:layout_height="3dp"
+				    	android:layout_marginTop="5dp"
+				    	android:background="#ff999999" />
+	          	</LinearLayout>
+		       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_tree"
+	                android:tag="@string/fragment_cover_cover_2"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_shrub"
+	                android:tag="@string/fragment_cover_cover_3"
+	            />
+		       	
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_sub_shrub"
+	                android:tag="@string/fragment_cover_cover_4"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_perennial_grass"
+	                android:tag="@string/fragment_cover_cover_5"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_annual"
+	                android:tag="@string/fragment_cover_cover_6"
+	            />
+		       			       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_herb_litter"
+	                android:tag="@string/fragment_cover_cover_7"
+	            />
+
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_wood_litter"
+	                android:tag="@string/fragment_cover_cover_8"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment4_button9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_rock"
+	                android:tag="@string/fragment_cover_cover_9"
+	            />     			       	
+		       			   
+		    </LinearLayout>
+	        	        
+    	</LinearLayout>
+
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	    >
+	        	        
+	        <ImageView
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/stick_right"
+        		android:adjustViewBounds="true"
+        		android:scaleType="fitXY"
+        	/>
+	        <TextView
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:textStyle="bold"
+        		android:text="90cm"
+        	/>
+
+		    <LinearLayout
+	            android:id="@+id/fragment_cover_coverSegment5"
+		        android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:gravity="center"
+		        android:orientation="vertical" 
+	            android:tag="4"
+		    >
+		    
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_bare"
+	                android:tag="@string/fragment_cover_cover_1"
+	            />
+		        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp" >
+		          	<View 
+				    	android:layout_width="match_parent"
+				    	android:layout_height="3dp"
+				    	android:layout_marginTop="5dp"
+				    	android:background="#ff999999" />
+	          	</LinearLayout>
+		       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_tree"
+	                android:tag="@string/fragment_cover_cover_2"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_shrub"
+	                android:tag="@string/fragment_cover_cover_3"
+	            />
+		       	
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_sub_shrub"
+	                android:tag="@string/fragment_cover_cover_4"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_perennial_grass"
+	                android:tag="@string/fragment_cover_cover_5"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_annual"
+	                android:tag="@string/fragment_cover_cover_6"
+	            />
+		       			       			       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_herb_litter"
+	                android:tag="@string/fragment_cover_cover_7"
+	            />
+
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_wood_litter"
+	                android:tag="@string/fragment_cover_cover_8"
+	            />
+		       	
+		       	<com.noisyflowers.rangelandhealthmonitor.android.util.NicelyToastedCheckBox
+	                android:id="@+id/fragment_cover_coverSegment5_button9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	        		android:layout_marginTop="5dp"
+	                android:button="@drawable/radio_cover_rock"
+	                android:tag="@string/fragment_cover_cover_9"
+	            />     			       	
+		       		
+		    </LinearLayout>
+	        	        
+    	</LinearLayout>
+	    
+	    	    	    	    	    	    	    
+    </LinearLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".45"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+        
+	       	<RadioGroup
+	            android:id="@+id/fragment_slopeshape_down_rg"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_down_concave_rb"
+	                android:tag="@string/slope_shape_fragment_concave"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_downslope_concave"
+	                android:button="@null"/>
+	            	            
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_down_convex_rb"
+	                android:tag="@string/slope_shape_fragment_convex"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_downslope_convex"
+	                android:button="@null"/>
+	            	            
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_down_linear_rb"
+	                android:tag="@string/slope_shape_fragment_linear"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_downslope_flat"
+	                android:button="@null"/>
+	            	            
+	        </RadioGroup>   
+        </LinearLayout>
+        
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".10"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:orientation="horizontal" >
+	        
+		    <View 
+	        	android:layout_centerHorizontal="true"
+		    	android:layout_width="3dp"
+		    	android:layout_height="match_parent"
+		    	android:background="#ff999999" />
+		    
+	    </LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight=".45"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="10dp"
+	        android:orientation="vertical" >
+		    
+	      	<RadioGroup
+	            android:id="@+id/fragment_slopeshape_cross_rg"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	                                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_cross_concave_rb"
+	                android:tag="@string/slope_shape_fragment_concave"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_crossslope_concave"
+	                android:button="@null"/>
+	            	                 
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_cross_convex_rb"
+	                android:tag="@string/slope_shape_fragment_convex"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_crossslope_convex"
+	                android:button="@null"/>
+	            	              
+	            <com.noisyflowers.landpks.android.util.NicelyToastedRadioButton
+	                android:id="@+id/fragment_slopeshape_cross_linear_rb"
+	                android:tag="@string/slope_shape_fragment_linear"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/radio_crossslope_flat"
+	                android:button="@null"/>
+	            	        
+	        </RadioGroup>  
+	     </LinearLayout>
+    </LinearLayout>
+    
+</ScrollView>

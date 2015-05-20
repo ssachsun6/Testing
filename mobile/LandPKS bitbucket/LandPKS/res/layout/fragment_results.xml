@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+	    android:id="@+id/results_main_area"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/results_TextView_recommendationsHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/results_fragment_recommendations_header"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <com.noisyflowers.landpks.android.util.ClimateChartView
+	        android:id="@+id/results_Climate_Chart"
+	        android:tag="climate"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="15dp"
+	        android:visibility="gone"
+	    />
+	    	    
+	    <TextView
+	        android:id="@+id/results_TextView_recommendation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	    />
+	    
+	    <LinearLayout
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal" 
+	    >
+		   	<TextView
+		        android:id="@+id/results_TextView_itemCountLabel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		        android:text="@string/results_fragment_recommendations_slider_label" />
+		    <TextView
+		        android:id="@+id/results_TextView_itemCount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		    />
+		</LinearLayout>
+
+		<SeekBar
+	        android:id="@+id/results_graph_number_seekbar"
+        	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+		/>	    
+		
+	    <com.noisyflowers.landpks.android.util.LPKSBarChartView
+	        android:id="@+id/results_AWC_BarChart"
+	        android:tag="awc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	    />
+		
+	    <TextView
+	        android:id="@+id/results_TextView_disclaimer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:textColor="@color/red"
+	        android:text="@string/results_fragment_recommendations_disclaimer"
+	        android:visibility="gone"
+	    />
+	    
+	    <com.noisyflowers.landpks.android.util.LPKSBarChartView
+	        android:id="@+id/results_GrassProductivity_BarChart"
+	        android:tag="grassProductivity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	    />
+	    
+	    <com.noisyflowers.landpks.android.util.LPKSBarChartView
+	        android:id="@+id/results_GrassErosion_BarChart"
+	        android:tag="grassErosion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	    />
+	    
+	    <com.noisyflowers.landpks.android.util.LPKSBarChartView
+	        android:id="@+id/results_CropProductivity_BarChart"
+	        android:tag="cropProductivity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	    />
+	    
+	    <com.noisyflowers.landpks.android.util.LPKSBarChartView
+	        android:id="@+id/results_CropErosion_BarChart"
+	        android:tag="cropErosion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	    />
+
+	
+	    	    	    
+	</LinearLayout>
+</ScrollView>
